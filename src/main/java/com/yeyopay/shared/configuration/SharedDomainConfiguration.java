@@ -1,6 +1,7 @@
 package com.yeyopay.shared.configuration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.yeyopay.shared.infrastructure.events.DomainEventPublisher;
 import com.yeyopay.shared.infrastructure.repositories.OutboxEventRepository;
 import com.yeyopay.shared.infrastructure.serialization.EventSerializer;
 import com.yeyopay.shared.infrastructure.serialization.JacksonEventSerializer;
