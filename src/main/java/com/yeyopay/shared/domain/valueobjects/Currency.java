@@ -26,6 +26,29 @@ public class Currency extends ValueObject {
     public static final Currency BTC = new Currency("BTC", "Bitcoin", "₿", 8, true);
     public static final Currency ETH = new Currency("ETH", "Ethereum", "Ξ", 18, true);
 
+    // East Africa
+    public static final Currency KES = new Currency("KES", "Kenyan Shilling", "KSh", 2, true);
+    public static final Currency UGX = new Currency("UGX", "Ugandan Shilling", "USh", 0, true);
+    public static final Currency TZS = new Currency("TZS", "Tanzanian Shilling", "TSh", 0, true);
+    public static final Currency RWF = new Currency("RWF", "Rwandan Franc", "FRw", 0, true);
+    public static final Currency BIF = new Currency("BIF", "Burundian Franc", "FBu", 0, true);
+    public static final Currency SOS = new Currency("SOS", "Somali Shilling", "Sh.So.", 0, true);
+    public static final Currency DJF = new Currency("DJF", "Djiboutian Franc", "Fdj", 0, true);
+    public static final Currency ETB = new Currency("ETB", "Ethiopian Birr", "Br", 2, true);
+    public static final Currency ERN = new Currency("ERN", "Eritrean Nakfa", "Nfk", 2, true);
+
+    // Central Africa
+    public static final Currency CDF = new Currency("CDF", "Congolese Franc", "FC", 2, true); // DR Congo
+
+    // Franc CFA - West and Central Africa
+    public static final Currency XAF = new Currency("XAF", "CFA Franc BEAC", "FCFA", 0, true); // Central Africa (e.g., Cameroon, Chad, Gabon, Equatorial Guinea, Central African Republic, Republic of Congo)
+    public static final Currency XOF = new Currency("XOF", "CFA Franc BCEAO", "CFA", 0, true); // West Africa (e.g., Senegal, Côte d'Ivoire, Mali, Burkina Faso, Togo, Benin, Niger, Guinea-Bissau)
+
+    // Other African countries
+    public static final Currency ZAR = new Currency("ZAR", "South African Rand", "R", 2, true);
+    public static final Currency NGN = new Currency("NGN", "Nigerian Naira", "₦", 2, true);
+    public static final Currency GHS = new Currency("GHS", "Ghanaian Cedi", "GH₵", 2, true);
+
     public Currency(String code, String name, String symbol, int decimalPlaces, boolean active) {
         if (code == null || code.trim().isEmpty()) {
             throw new IllegalArgumentException("Currency code cannot be null or empty");

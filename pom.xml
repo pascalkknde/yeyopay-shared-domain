@@ -17,7 +17,7 @@
 
 	<name>YeyoPay Shared Domain</name>
 	<description>Domain models, events, and infrastructure shared across YeyoPay microservices</description>
-	<url>https://github.com/yeyopay/shared-domain</url>
+	<url>https://github.com/pascalkknde/yeyopay-shared-domain</url>
 
 	<licenses>
 		<license>
